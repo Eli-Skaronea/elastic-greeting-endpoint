@@ -1,0 +1,16 @@
+app:
+  clients:
+    hostname: localhost
+    scheme: http
+    httpPort: 9200
+  index:
+    name: greeting
+    type: _doc
+    shard: 2
+    replica: 1
+    from: 0
+    size: 5
+    timeout: 60
+spring:
+  profiles:
+    active: production
