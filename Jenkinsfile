@@ -44,6 +44,7 @@ podTemplate(label: 'mypod', containers:
             container('docker')
             {
                 sh "docker build -t eskaronea/elastic-greeting-endpoint:v1.0.${env.BUILD_NUMBER} ."
+                sh "docker build -t eskaronea/elastic-greeting-endpoint:latest ."
         
                 echo 'Pushing docker image to docker hub...'
                
@@ -70,7 +71,7 @@ podTemplate(label: 'mypod', containers:
                 sh "helm lint helm-charts/spring-app/"
 
                 echo 'Releasing helm chart'
-                sh "helm upgrade --install spring-elastic -f helm-charts/spring-app/evalues.yaml helm-charts/docs/spring-app-0.1.0.tgz"
+                sh "helm upgrade --install spring-elastic -f helm-charts/spring-app/evalues.yaml helm-charts/spring-app"
 
             }
         }
