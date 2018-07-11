@@ -71,7 +71,7 @@ podTemplate(label: 'mypod', containers:
                 sh "helm lint helm-charts/spring-app/"
 
                 echo 'Releasing helm chart'
-                sh "helm upgrade --install --reset-values spring-elastic -f helm-charts/spring-app/evalues.yaml helm-charts/spring-app"
+                sh "helm upgrade --install --recreate-pods spring-elastic -f helm-charts/spring-app/evalues.yaml helm-charts/spring-app"
 
             }
         }
