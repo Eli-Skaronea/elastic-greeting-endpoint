@@ -49,8 +49,10 @@ public class QueryDAO {
             IndexRequest request = new IndexRequest(props.getIndex().getName(), props.getIndex().getType());
             request.source(mapper.writeValueAsString(greeting), XContentType.JSON);
             IndexResponse response = client.index(request);
+            System.out.println("I sent something!");
             return response.getId();
         } catch (Exception ex) {
+            ex.printStackTrace();
             System.out.println("The exception was thrown in createIndex method.: " + ex);
         }
 
