@@ -1,4 +1,5 @@
 server.port: 9000
+logging.level.root: WARN
 app:
   clients:
     hostname: elasticsearch
