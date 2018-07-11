@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/elastic-greeting-endpoint.iml" filepath="$PROJECT_DIR$/elastic-greeting-endpoint.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/elastic-greeting-endpoint_main.iml" filepath="$PROJECT_DIR$/.idea/modules/elastic-greeting-endpoint_main.iml" group="elastic-greeting-endpoint" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/elastic-greeting-endpoint_test.iml" filepath="$PROJECT_DIR$/.idea/modules/elastic-greeting-endpoint_test.iml" group="elastic-greeting-endpoint" />
+    </modules>
+  </component>
+</project>

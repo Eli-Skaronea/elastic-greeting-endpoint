@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.elasticsearch.plugin:parent-join-client:6.3.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.elasticsearch.plugin/parent-join-client/6.3.0/6f2f5fb43898269bc75939e4f26febdf6f93b4ca/parent-join-client-6.3.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.elasticsearch.plugin/parent-join-client/6.3.0/bbdf6ea48a76d2b5a8c7d8b06603c99c359d4a88/parent-join-client-6.3.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
