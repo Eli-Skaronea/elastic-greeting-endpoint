@@ -1,5 +1,4 @@
 server.port: 9000
-logging.level.root: DEBUG
 app:
   clients:
     hostname: elasticsearch
