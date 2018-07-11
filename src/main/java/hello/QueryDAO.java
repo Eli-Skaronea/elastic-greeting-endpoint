@@ -52,8 +52,8 @@ public class QueryDAO {
             System.out.println("I sent something!");
             return response.getId();
         } catch (Exception ex) {
-            //ex.printStackTrace();
             System.out.println("The exception was thrown in createIndex method.: " + ex);
+            //ex.printStackTrace();
         }
 
         return null;
