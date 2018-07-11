@@ -22,7 +22,9 @@ public class GreetingController {
     public Greeting greeting(@RequestParam(value="name", defaultValue="World") String name) {
         Greeting greetings = new Greeting(counter.incrementAndGet(),
                             String.format(template, name));
+        System.out.println("About to create index");
         dao.createIndex(greetings);
+        System.out.println("Done creating index");
         return greetings;
     }
 

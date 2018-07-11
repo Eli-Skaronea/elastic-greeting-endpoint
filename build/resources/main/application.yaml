@@ -1,7 +1,7 @@
 server.port: 9000
 app:
   clients:
-    hostname: elasticsearch
+    hostname: localhost
     scheme: http
     httpPort: 9200
   index:
