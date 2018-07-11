@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0704641b-8bc1-4de7-87ed-6a3e6f50e1b2" name="Default" comment="" />
+    <list default="true" id="0704641b-8bc1-4de7-87ed-6a3e6f50e1b2" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/hello/QueryDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hello/QueryDAO.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -23,7 +25,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/hello/QueryDAO.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="390">
-              <caret line="54" column="35" selection-start-line="54" selection-start-column="35" selection-end-line="54" selection-end-column="35" />
+              <caret line="54" column="12" selection-start-line="54" selection-start-column="12" selection-end-line="54" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -487,8 +489,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/hello/QueryDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/hello/GreetingController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/hello/QueryDAO.java" />
       </list>
     </option>
   </component>
@@ -631,12 +633,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1531315188739</updated>
-      <workItem from="1531315191498" duration="2011000" />
+      <workItem from="1531315191498" duration="2071000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2011000" />
+    <option name="totallyTimeSpent" value="2071000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="2286" y="73" width="1390" height="1007" extended-state="0" />
@@ -701,7 +703,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/hello/QueryDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
-          <caret line="54" column="35" selection-start-line="54" selection-start-column="35" selection-end-line="54" selection-end-column="35" />
+          <caret line="54" column="12" selection-start-line="54" selection-start-column="12" selection-end-line="54" selection-end-column="12" />
         </state>
       </provider>
     </entry>
