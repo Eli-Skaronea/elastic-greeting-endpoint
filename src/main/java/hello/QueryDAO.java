@@ -47,7 +47,7 @@ public class QueryDAO {
 
         try {
             IndexRequest request = new IndexRequest(props.getIndex().getName(), props.getIndex().getType());
-            request.source(mapper.writeValueAsString(greeting), XContentType.JSON);
+            request.source(greeting.getContent(), XContentType.JSON);
             IndexResponse response = client.index(request);
             System.out.println("I sent something!");
             return response.getId();
