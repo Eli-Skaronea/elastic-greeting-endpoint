@@ -5,15 +5,16 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class Greeting {
 
-    private long id;
+    private Integer id;
     private String content;
 
-    public Greeting(long id, String content) {
+    public Greeting(Integer id, String content) {
         this.id = id;
         this.content = content;
+
     }
 
-    public long getId() {
+    public Integer getId() {
         return id;
     }
 
@@ -25,7 +26,7 @@ public class Greeting {
         this.content = content;
     }
 
-    public void setId(long id){
+    public void setId(Integer id){
         this.id = id;
     }
 }

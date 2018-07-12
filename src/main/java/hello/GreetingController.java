@@ -15,16 +15,17 @@ public class GreetingController {
     }
 
     private static final String template = "Hello, %s!";
-    private final AtomicLong counter = new AtomicLong();
-
+//  private final AtomicLong counter = new AtomicLong();
+    int counter = 0;
 
     @GetMapping(value = "/greeting", produces = "application/json; charset=utf-8")
     public Greeting greeting(@RequestParam(value="name", defaultValue="World") String name) {
-        Greeting greetings = new Greeting(counter.incrementAndGet(),
+        Greeting greetings = new Greeting(counter,
                             String.format(template, name));
         System.out.println("About to create index");
         dao.createIndex(greetings);
         System.out.println("Done creating index");
+        counter++;
         return greetings;
     }
 

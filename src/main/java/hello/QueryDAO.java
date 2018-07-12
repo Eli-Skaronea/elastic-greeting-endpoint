@@ -46,13 +46,13 @@ public class QueryDAO {
     public String createIndex(Greeting greeting) {
 
         try {
-            IndexRequest request = new IndexRequest(props.getIndex().getName(), props.getIndex().getType());
-            String jsonString = "{" +
-                    "\"user\":\"kimchy\"," +
-                    "\"postDate\":\"2013-01-30\"," +
-                    "\"message\":\"trying out Elasticsearch\"" +
-                    "}";
-            request.source(jsonString, XContentType.JSON);
+            IndexRequest request = new IndexRequest(props.getIndex().getName(), props.getIndex().getType(), greeting.getId().toString());
+//            String jsonString = "{" +
+//                    "\"user\":\"kimchy\"," +
+//                    "\"postDate\":\"2013-01-30\"," +
+//                    "\"message\":\"trying out Elasticsearch\"" +
+//                    "}";
+            request.source(mapper.writeValueAsString(greeting), XContentType.JSON);
             //request.source(mapper.writeValueAsString(greeting.getContent()), XContentType.JSON);
             IndexResponse response = client.index(request);
             System.out.println("I sent something!");
