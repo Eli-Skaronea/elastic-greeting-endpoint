@@ -47,7 +47,13 @@ public class QueryDAO {
 
         try {
             IndexRequest request = new IndexRequest(props.getIndex().getName(), props.getIndex().getType());
-            request.source(greeting.getContent(), XContentType.JSON);
+            String jsonString = "{" +
+                    "\"user\":\"kimchy\"," +
+                    "\"postDate\":\"2013-01-30\"," +
+                    "\"message\":\"trying out Elasticsearch\"" +
+                    "}";
+            request.source(jsonString, XContentType.JSON);
+            //request.source(mapper.writeValueAsString(greeting.getContent()), XContentType.JSON);
             IndexResponse response = client.index(request);
             System.out.println("I sent something!");
             return response.getId();
